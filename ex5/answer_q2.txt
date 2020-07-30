@@ -1,0 +1,28 @@
+Question:
+suggest how to use the workflow you have implemented in this assignment to train a network that could  be  used
+for  super-resolution.   A  full  answer  consists  of  a  description  of  the  corruption  function,
+and how to properly use therestore_image()function for this task.
+For this context only, you could optionally add additional operations before calling to restore_image()
+Solution:
+In the case of image super-resolution we will use a similar workflow to the deblurring network we've implemented.
+However,we will use  gaussian blur ,also   in restore_image we will change the images' size.
+
+Lets take for example a network that will be larger by 2 folds.
+
+validation and training dataset:
+This database will be be built by  using images and their gaussian blur.
+This means that the source batches will contain the images after gaussian blur  has been perfformed.
+Also the target batches will contain the original images.
+
+The corruption function:
+A dictionary will be build.This dictionary returns from a given  blurred image the original one.
+This every time the corruption function will be called on a blurred
+image, the  dictionary's value will be returned.
+
+restore_image will take an image to enlarge and then work in the following manner:
+1. Train a model on patches of our data using the described corruption function.
+2. Create an adjusted model tfor the size fitting.
+3. Double the sizes of the image.
+4. Gives the big image to the adjusted model to predict the results.
+5.done
+

@@ -1,0 +1,20 @@
+Question:
+Describe the effect of increasing the residual blocks on its performance for each task,
+ both quanti-tatively in terms of
+ the plot you got and qualitatively in terms of the differences in the image outputs of each model
+
+Solution:
+The network's learning rate increases with  each addition of residual block. This is most seen in
+that the first epoch's   validation loss decrease.
+Also the   learning rate increase is also seen in the following epochs
+
+However,  as the network converges it is not as much as in the first epoch.All graphs
+that represent the same network ,however with a different number of resblocks appear to be roughly shifting one another
+in the y axis.
+In addition it does seem that having more depth in the network made the validation loss decrease become more continuous
+and so appear more "natural".
+
+Also, in the images that were produced from networks  denoising with more depth smoother surfaces and clearer
+edges can be seen.
+In the networks of the deblurring higher depth produces clearer edges and  less noisy images.
+ The networks that have low count of  resblock the  blurring angles are very evident in the letters and it's hard to discern between close lines.

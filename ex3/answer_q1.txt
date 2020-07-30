@@ -1,0 +1,16 @@
+Q1: What does it mean to multiply each level in a different value? What do we try to control on?
+
+ANSWER:
+What does it mean to multiply each level in a different value?
+It means that each level is a different band pass filter.
+This is why when applying a pascal row filter we can take levels
+in differnt intensities and create filter on the picture
+What do we try to control on?
+The smoothness of the image.
+when using a higher pascal row filter,more neighbour pixels are taken in the calculations and therefore the image
+will be more blurry when iterating the pyramid layers.
+That causes  the borders  in the images of the laplacian pyramid to be thicker.
+So at the end a smoother image will be created
+
+
+

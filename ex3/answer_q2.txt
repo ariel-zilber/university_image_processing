@@ -1,0 +1,7 @@
+Q2: Blending is performed with different image filters (filter_size_im = 1,3,5,7...).
+
+ANSWER:
+The filter mask effects the seams between the images that are blended.When a higher pascal row filter is used,
+ the area of the border will spread to  more pixels  and the
+transition will appear more smooth.This is in contrast to lower pascal row filters which  will make an effect of
+"pasting" one image upon the other, or a narrow area of border blur.

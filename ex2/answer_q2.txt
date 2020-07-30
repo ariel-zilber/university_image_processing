@@ -1,0 +1,11 @@
+Question:
+Record yourself using your smartphone (or any other recording device) and fast forward it using both
+resize_spectrogram and resize_vocoder. Generate two audio files from the new samples, and explain
+the differences.
+Answer:
+The sounds given are different.The one generated from resize_spectrogram is a lot less clear and the sound seems
+to stop in the middle of the recording.In contrast,the sound created from the resize_vocoder is very clear.
+The difference between both sounds comes from the fact the the phase was not currencted  in the resize_spectogram.
+As a result some of the sound the come form the wav file seems to worese the sound quality.Most likely, a wave
+interference occurs.When the audio stops it is probably a desturcive one.Also probably constuctive one occurs as the
+audio also seemed sowder then the original one.

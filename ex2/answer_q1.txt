@@ -1,0 +1,14 @@
+Question:
+Run change_rate and change_samples with the given WAV file aria_4kHz.wav and a ratio of 2.
+ Listen to both change_rate.wav and change samples.wav. Can you explain the reason for the difference
+between the two? (Note: Students with hearing loss at high frequencies, please contact us in the private
+forum.)
+Solution:
+The pitch in the sound generated using the change_rate is higher.The reason is that this function increase the frequncy
+and that Pitch and frequency are directly related.
+Lets explain:
+Sound is created whenever a given object vibrates and creates a disturbance in the air.When this vibration reaches
+human ears it is perceive that as sound.The number of such vibrations of a produced sound in a given time is called
+its frequency.As the frequency is higher the number of vibrations in a given time becomes higher as well.
+Pitch is the sensation of the frequency of sound.Therefore,when we increase the frequncty the pitch increases
+as well.

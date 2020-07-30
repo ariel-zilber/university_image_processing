@@ -1,0 +1,9 @@
+Question:
+Why did you get two different magnitude images?
+Solution:
+The reason is that in frequency space point value may depend on very image-distant points.
+Therefore when doing manipulations in the frequency space it is like doing using multi-points scheme in image space.
+Basically I mean that the points the approximation of the derivative .
+This is unlike doing the derivative directly in the image space,
+where the approximation is done on points next to each other.
+As a result the can be differences in the magnitude received as each pixel at (x,y) in the images space

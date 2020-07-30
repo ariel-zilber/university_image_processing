@@ -1,0 +1,11 @@
+Question:
+    The quantization procedure needs an initial segment division of [0..255] to segments, z. If a division
+    will have a gray level segment with no pixels, the procedure will crash (Q1: Why?). In order
+    to overcome this problem, you are required to set the initial division such that each segment will
+    contain approximately the same number of pixels
+Answer:
+    The reason is that according to the  formula that we use to caluculate qi (the new gray level in segment i)
+    that appears in page 57 of the lecture notes
+    ("https://moodle2.cs.huji.ac.il/nu19/pluginfile.php/219284/mod_resource/content/1/course-19-01-intro-hist.pdf")
+    some segmentation would have a total sum of 0 therefore the calculatation of qi would include
+    a diviation of a number by 0 which python throws ZeroDivisionError exception

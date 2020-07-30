@@ -1,0 +1,10 @@
+Q3: Blending is performed with a varying number of pyramid levels (max_levels = 1,2,3,4,5,...).
+
+ANSWER:
+The total number of levels in the pyramid has an effect on
+ the appearance of the borders of each image and the whole
+output image.When using more levels, we get a better image(smoother).The reason is that we construct the
+output image from the images created by the  laplacian pyramids.
+When iterating over the pyramid levels a smoother border is achieved.
+That is relevant for each image's pyramid borders  and for the
+output  blended pyramid .
